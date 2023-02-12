@@ -20,7 +20,7 @@ class FacebookFeedController extends Controller
             'default_graph_version' => 'v10.0',
         ]);
 
-        $response = $facebook->get('/116189751384283/posts?fields=id,message,created_time', 'EAASCabDdOzgBAEd2ww0zQkGZBlecK1AuEHmb8kzQvPehK7CcYd49ZCaMu4YidyocSu5YjraYZAY6PnGErMCFBFZBW3ncmHl5xBxMOH8vNYB1ery2ZBoaZB0ZCF1DDZB4SGXIDKoodNcCJcAJtVoVSpZCtZC7W2eIx1cQYVdiZCKcu3LZCSUqggbwZC9PS46ZC27mSrTsxYixJOewtYiCbvtTYIGZBUm');
+        $response = $facebook->get('/116189751384283/posts?fields=id,message,created_time,full_picture', 'EAASCabDdOzgBACdHirlrBQVTZC7k2TeCcSN9PzMR3K6Su2sC0HIQdkYpKfvRiOmkwwpPZAZBiaGVljOTJZAxy0dzbwGUKvB0ydbd9oFUGVwoUTKaeFKp1GZCvgV7BMaQPZBreXHKZAHqE9jnyf6ohnre1k1kuLQS0IJIPm0I9mlpehUS2kaZBVHg');
         $posts = $response->getGraphEdge();
 
         foreach ($posts as $post) {

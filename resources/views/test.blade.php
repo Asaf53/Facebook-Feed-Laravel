@@ -23,6 +23,7 @@
             <tr>
                 <td>{{ $post->getField('message') }}</td>
                 <td>{{ $post->getField('created_time')->format('Y-m-d H:i:s') }}</td>
+                <td><img src="{{ $post->getField('full_picture') }}" alt=""></td>
             </tr>
         @endforeach
     </tbody>
