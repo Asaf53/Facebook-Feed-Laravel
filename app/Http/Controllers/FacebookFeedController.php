@@ -20,15 +20,15 @@ class FacebookFeedController extends Controller
             'default_graph_version' => 'v10.0',
         ]);
 
-        $response = $facebook->get('/116189751384283/posts?fields=id,message,created_time,full_picture', 'EAASCabDdOzgBAFPsMLDIc5ohTvZBhpzmvCeCiWg4r0xBZAsVvaShnmRFmsQYzZAooRTw44uHPXUtuwlEGE4HfmELpgehBC3ijZA1xaAnOtDtFpPNB3vnk9JHhL4RSmZAw8IZCTVxro18L6ZCWrnOqp857B5pvmLoSmB8P7Gpg2gdoYNXee6b3uP7S4UxyJe9ZBXszoCZBAVWdZCQZDZD');
+        $response = $facebook->get('/116189751384283/posts?fields=id,message,created_time,full_picture', 'EAASCabDdOzgBAGUSuYb0zft6uV8VTrJEz0ABve5hguPohWbwXi84HmYhnxfpEF79gi3BZAXkqK3FGruKz8FUgtMdY462fRxIsPGs2mQoNi9kJkUibopZAm2jts41vvtNPsnORaM7dW0q4j94SzOwYG6Qq50vsn7hlbZBabS6X1UFvRKHZCYLpv2DKwhGZBBrfdq7SQZA4RyocK4S7Mew8L');
         $posts = $response->getGraphEdge();
 
-        foreach ($posts as $post) {
-            $message = $post->getField('message');
-            $createdTime = $post->getField('created_time');
+        // foreach ($posts as $post) {
+        //     $message = $post->getField('message');
+        //     $createdTime = $post->getField('created_time');
 
-            // Do something with the data...
-        }
+        //     // Do something with the data...
+        // }
 
         return view('test', compact('posts'));
         

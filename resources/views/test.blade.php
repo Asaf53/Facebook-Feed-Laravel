@@ -16,6 +16,7 @@
         <tr>
             <th>Message</th>
             <th>Created Time</th>
+            <th>Image</th>
         </tr>
     </thead>
     <tbody>
