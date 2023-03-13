@@ -26,12 +26,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/test', [FacebookFeedController::class, 'scrapeFacebook']);
 Route::get('/test1', [FacebookFeedController::class, 'index']);
-
-
-
-Route::get('/fb', [PostManagmentController::class, 'index']);
-
-
-
-Route::get('/contact', [ContactController::class, 'index']);
-Route::post('/send-form', [ContactController::class, 'contact'])->name('send');
