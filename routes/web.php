@@ -25,4 +25,3 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/test', [FacebookFeedController::class, 'scrapeFacebook']);
-Route::get('/test1', [FacebookFeedController::class, 'index']);
