@@ -11,7 +11,9 @@ use Illuminate\Http\Request;
 
 class FacebookFeedController extends Controller
 {
-
+    
+    //oauth/access_token?grant_type=fb_exchange_token&client_id=1269290357308216&client_secret=f6f3696ba4669168747fe3c21c1e66a4&fb_exchange_token=EAASCabDdOzgBANqvRZC1ygL31aZB8J4uaKC7vtthRbGT03d58WZC3ZA4n5KQfdWxUqiTRQDfEVtlgNBusvXBrbesiMRTdCiCgpSwH6AEE2YcwjE2SO2142RUoo0S6X0BjyTAz2ZAQZA5i7LkfVnkhQTA8ozogpNm2dXUzZBVtshSkJka4giivlrJ6QEDiR8LZBWjIavc1XsQQnf9gLZC7MjlH
+    
   public function scrapeFacebook()
   {
     $facebook = new Facebook([
