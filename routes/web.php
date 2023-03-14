@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FacebookFeedController;
 use App\Http\Controllers\PostManagmentController;
+use App\Http\Controllers\SendEmailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,6 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/test', [FacebookFeedController::class, 'scrapeFacebook']);
+
+Route::get('/sendemail', [SendEmailController::class, 'index']);
+Route::post('/sendemail/send', [SendEmailController::class, 'send']);
